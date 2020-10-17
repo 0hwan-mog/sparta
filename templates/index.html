@@ -173,18 +173,18 @@
     </div>
 
 
-    <div class="itemOrder">
+    <div class="itemOrder" >
         <div class="input-group mb-3">
             <div class="input-group-prepend">
                 <div class="input-group-text">주문자 이름</div>
             </div>
-            <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="">
+            <input  id="order-name" type="text" class="form-control" id="inlineFormInputGroup" placeholder="">
         </div>
         <div class="input-group mb-3">
             <div class="input-group-prepend">
                 <div class="input-group-text">수량</div>
             </div>
-            <select class="custom-select" id="inputGroupSelect01">
+            <select  id="order-name" class="custom-select" id="inputGroupSelect01">
                 <option selected>--수량을 선택하세요--</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
@@ -195,18 +195,35 @@
             <div class="input-group-prepend">
                 <div class="input-group-text">주소</div>
             </div>
-            <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="">
+            <input id="order-address" type="text" class="form-control" id="inlineFormInputGroup" placeholder="">
         </div>
         <div class="input-group mb-3">
             <div class="input-group-prepend">
                 <div class="input-group-text">전화번호</div>
             </div>
-            <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="">
+            <input id="order-phone"type="text" class="form-control" id="inlineFormInputGroup" placeholder="">
         </div>
     </div>
     <div class="btnOrder">
         <button type="button" onclick="order()" class="btn btn-primary">주문하기</button>
     </div>
+    <div>
+        <table class="table" id = "orderlist">
+            <thead>
+            <tr>
+                <th scope="col">이름</th>
+                <th scope="col">수량</th>
+                <th scope="col">주소</th>
+                <th scope="col">전화번호</th>
+            </tr>
+            </thead>
+            <tbody>
+
+
+            </tbody>
+        </table>
+    </div>
+</div>
 </div>
 </body>
 
