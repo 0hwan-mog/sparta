@@ -153,27 +153,37 @@
 
 <body>
 <div class="wrap">
-    <div class="myitem"></div>
-    <div class="desc">
-        <h1>양초를 팝니다 <span class="price">가격:3,000원/개</span></h1>
-        <p>이 양초는 특별한 힘을 가지고 있습니다. 하나 두 개 켜 놓으면 또 다른 촛불을 찾을 수 있죠!</p>
-
-        <p class="rate">달러-원 환율: <span id="rate-box">1,000</span></p>
+    <div class="mainImg">
     </div>
-    <div class="order-box">
+
+    <div class="itemTitle">
+        <div>
+            <h1>2020년 일력 <span class="itemPrice">가격 : 27,000원/1개</span></h1>
+            <p>당신의 빛나는 하루하루를 뜻깊게 기록하고 싶은 바램으로 만들어졌습니다.
+                달력 표지에 들어가는 '2020' 일러스트는 축하를 의미하는 파티 풍선을 모티브로 디자인되었습니다. 여러분도 축하의 마음을 담아 빛나는 20대인 나에게, 설레는 20살을 맞이하는 소중한
+                이에게
+                선물해주세요. 20대가 지나갔더라도 괜찮아요!
+                마음은 여전히 20대인 것을 아니까요.😊</p>
+        </div>
+    </div>
+    <div>
+        <p class="exchangeRate">달러-원 환율 : <span id="exchangeRate"> </span></p>
+    </div>
+
+
+    <div class="itemOrder">
         <div class="input-group mb-3">
             <div class="input-group-prepend">
-                <span class="input-group-text" id="inputGroup-sizing-default">주문자이름</span>
+                <div class="input-group-text">주문자 이름</div>
             </div>
-            <input id="order-name" type="text" class="form-control" aria-label="Default"
-                   aria-describedby="inputGroup-sizing-default">
+            <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="">
         </div>
         <div class="input-group mb-3">
             <div class="input-group-prepend">
-                <label class="input-group-text" for="inputGroupSelect01">수량</label>
+                <div class="input-group-text">수량</div>
             </div>
-            <select id="order-count" class="custom-select">
-                <option selected>-- 수량을 선택하세요 --</option>
+            <select class="custom-select" id="inputGroupSelect01">
+                <option selected>--수량을 선택하세요--</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
@@ -181,35 +191,19 @@
         </div>
         <div class="input-group mb-3">
             <div class="input-group-prepend">
-                <span class="input-group-text" id="inputGroup-sizing-default">주소</span>
+                <div class="input-group-text">주소</div>
             </div>
-            <input id="order-address" type="text" class="form-control" aria-label="Default"
-                   aria-describedby="inputGroup-sizing-default">
+            <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="">
         </div>
         <div class="input-group mb-3">
             <div class="input-group-prepend">
-                <span class="input-group-text" id="inputGroup-sizing-default">전화번호</span>
+                <div class="input-group-text">전화번호</div>
             </div>
-            <input id="order-phone" type="text" class="form-control" aria-label="Default"
-                   aria-describedby="inputGroup-sizing-default">
+            <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="">
         </div>
-        <button onclick="order()" type="button" class="btn btn-primary mybtn">주문하기</button>
     </div>
-    <div>
-        <table class="table" id="orderlist">
-            <thead>
-            <tr>
-                <th scope="col">이름</th>
-                <th scope="col">수량</th>
-                <th scope="col">주소</th>
-                <th scope="col">전화번호</th>
-            </tr>
-            </thead>
-            <tbody>
-
-
-            </tbody>
-        </table>
+    <div class="btnOrder">
+        <button type="button" onclick="order()" class="btn btn-primary">주문하기</button>
     </div>
 </div>
 </body>
